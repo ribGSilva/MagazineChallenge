@@ -1,0 +1,21 @@
+
+
+Relatório de Decisões
+
+
+Maven: Foi escolhido usar maven, pois além de ter rápida configuração, cuidar das dependências, compilar o projeto e empacotar-lo, ele executa os testes durante a compilação por padrão, e caso algum teste falhe, ele interrompe o build e mantém a integridade do projeto.
+
+Spring: Rápida configuração.
+
+Microserviços: Os requisitos não possuem características de CRUDs, logo, achei mais vantajoso criar vários serviços para atenter as requisições.
+
+Mappers: Usei mappers para simular dados em persistência.
+
+DAOs: Data Access Object - Reporitório da aplicação.
+
+Utils: Possuirem metodos úteis para todo o projeto. 
+
+Business: Aplica as regras de negócio.
+
+
+Mantive a pasta target para vocês não precisarem instalar java nem maven na maquina para compilar o projeto.
