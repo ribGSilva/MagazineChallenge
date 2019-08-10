@@ -2,8 +2,6 @@
 
 echo "Building JAVA server container..."
 
-sudo mvn clean install .
-
 sudo docker build -t webserver:0.1 ./MagazinServer/
 
 sudo docker run -d -p 8080:8080 --restart=always --name javaserver webserver:0.1
