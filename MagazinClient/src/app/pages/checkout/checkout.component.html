@@ -1,0 +1,40 @@
+<div class="text-center" style="margin-top: 20px; margin-bottom: 20px;">
+    <h4>Confirme seu Pedido</h4>
+</div>
+<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="col-2 text-center border">
+        <img src="https://image.flaticon.com/icons/svg/172/172657.svg" width="100px"
+            style="margin-top: 30px; margin-bottom: 15px" />
+        <h5> {{ order.sandwich.name }}</h5>
+        <h5> {{ order.total | currency:'BRL':true:'1.2-2'}}</h5>
+    </div>
+    <div class="col-2 text-center border" *ngFor="let ingredient of order.sandwich.ingredients">
+        <img src="{{ ingredient.ingredient.image }}" width="100px" style="margin-top: 30px; margin-bottom: 15px" />
+        <h5> {{ ingredient.ingredient.name }}</h5>
+        <h6> Quantidade: {{ ingredient.quantity }}</h6>
+    </div>
+</div>
+
+<div class="row" class="text-center" style="margin-top: 20px; margin-bottom: 20px;">
+    <h4>Promoções Aplicadas</h4>
+</div>
+<div class="row">
+    <div class="col-4 text-center border" *ngFor="let promotion of order.promotions">
+        <h5 style="margin-top: 10px; margin-bottom: 10px;"> {{ promotion.name }}</h5>
+        <span> {{ promotion.description }}</span>
+    </div>
+</div>
+
+
+<div class="row" >
+    <div class="col-3 text-center"></div>
+    <div class="col-3 text-center">
+        <button class="btn btn-warning col-6" style="margin-top: 25px; height: 40px; width: 100px;" 
+            (click)="voltar()">Voltar</button>
+    </div>
+    <div class="col-3 text-center">
+        <button class="btn btn-success col-6" style="margin-top: 20px; height: 40px; width: 100px;" 
+            (click)="confirmOrder()">Confirmar</button>
+    </div>
+    <div class="col-3 text-center"></div>
+</div>

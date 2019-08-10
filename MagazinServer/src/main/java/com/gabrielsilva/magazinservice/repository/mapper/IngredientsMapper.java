@@ -13,6 +13,7 @@ public class IngredientsMapper {
 		
 		Ingredient alface = new Ingredient();
 		
+		alface.setImage("https://image.flaticon.com/icons/svg/1155/1155257.svg");
 		alface.setName(IngredientNames.ALFACE);
 		alface.setValue(BigDecimal.valueOf(0.4));
 		
@@ -20,6 +21,7 @@ public class IngredientsMapper {
 		
 		Ingredient bacon = new Ingredient();
 		
+		bacon.setImage("https://image.flaticon.com/icons/svg/648/648652.svg");
 		bacon.setName(IngredientNames.BACON);
 		bacon.setValue(BigDecimal.valueOf(2.0));
 		
@@ -27,6 +29,7 @@ public class IngredientsMapper {
 		
 		Ingredient hamburguer = new Ingredient();
 		
+		hamburguer.setImage("https://image.flaticon.com/icons/svg/953/953078.svg");
 		hamburguer.setName(IngredientNames.HAMBURGUER_DE_CARNE);
 		hamburguer.setValue(BigDecimal.valueOf(3.0));
 		
@@ -34,17 +37,19 @@ public class IngredientsMapper {
 		
 		Ingredient ovo = new Ingredient();
 		
+		ovo.setImage("https://image.flaticon.com/icons/svg/135/135629.svg");
 		ovo.setName(IngredientNames.OVO);
 		ovo.setValue(BigDecimal.valueOf(0.8));
 		
 		ingredients.add(ovo);
 		
-		Ingredient quejo = new Ingredient();
+		Ingredient queijo = new Ingredient();
 		
-		quejo.setName(IngredientNames.QUEIJO);
-		quejo.setValue(BigDecimal.valueOf(1.5));
+		queijo.setImage("https://image.flaticon.com/icons/svg/1656/1656387.svg");
+		queijo.setName(IngredientNames.QUEIJO);
+		queijo.setValue(BigDecimal.valueOf(1.5));
 		
-		ingredients.add(quejo);
+		ingredients.add(queijo);
 		
 		return ingredients;
 	}

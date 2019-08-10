@@ -1,17 +1,18 @@
 package com.gabrielsilva.magazinservice.repository.entity;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Sandwich implements Cloneable {
 
 	private String name;
-	private Map<Ingredient, Integer> ingredients;
+	private String image;
+	private Set<IngredientItem> ingredients;
 
 	public Sandwich() {
 		name = new String();
-		ingredients = new HashMap<Ingredient, Integer>();
+		ingredients = new HashSet<IngredientItem>();
 	}
 
 	public String getName() {
@@ -22,12 +23,20 @@ public class Sandwich implements Cloneable {
 		this.name = name;
 	}
 
-	public Map<Ingredient, Integer> getIngredients() {
+	public Set<IngredientItem> getIngredients() {
 		return ingredients;
 	}
 
-	public void setIngredients(Map<Ingredient, Integer> ingredients) {
+	public void setIngredients(Set<IngredientItem> ingredients) {
 		this.ingredients = ingredients;
+	}
+	
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	@Override
@@ -36,6 +45,7 @@ public class Sandwich implements Cloneable {
 		int result = 1;
 		result = prime * result + ((ingredients == null) ? 0 : ingredients.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((image == null) ? 0 : image.hashCode());
 		return result;
 	}
 
@@ -53,13 +63,13 @@ public class Sandwich implements Cloneable {
 
 	@Override
 	public String toString() {
-		return "Sandwich [name=" + name + ", ingredients=" + ingredients + "]";
+		return "Sandwich [name=" + name + ", image=" + image + ", ingredients=" + ingredients + "]";
 	}
-	
+
 	public Sandwich(Sandwich other) {
 		name = other.name;
-		ingredients = other.ingredients.entrySet()
-				.stream().collect(Collectors.toConcurrentMap(Map.Entry::getKey, Map.Entry::getValue));
+		image = other.image;
+		ingredients = other.ingredients.stream().map(IngredientItem::clone).collect(Collectors.toSet());
 	}
 	
 	@Override

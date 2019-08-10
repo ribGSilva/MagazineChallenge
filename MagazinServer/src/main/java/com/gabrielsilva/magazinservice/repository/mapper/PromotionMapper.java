@@ -22,7 +22,7 @@ public class PromotionMapper {
 		Promotion muitaCarne = new Promotion();
 		
 		muitaCarne.setName(PromotionNames.MUITA_CARNE);
-		muitaCarne.setDescription("A cada 3 porções de carne o cliente só paga 2. Se o lanche tiver 6 porções, ocliente pagará 4. Assim por diante...");
+		muitaCarne.setDescription("A cada 3 porções de carne o cliente só paga 2. Se o lanche tiver 6 porções, o cliente pagará 4. Assim por diante...");
 
 		promotions.add(muitaCarne);
 		
@@ -30,7 +30,7 @@ public class PromotionMapper {
 		Promotion muitoQueijo = new Promotion();
 		
 		muitoQueijo.setName(PromotionNames.MUITO_QUEIJO);
-		muitoQueijo.setDescription("A cada 3 porções de queijo o cliente só paga 2. Se o lanche tiver 6 porções, ocliente pagará 4. Assim por diante...");
+		muitoQueijo.setDescription("A cada 3 porções de queijo o cliente só paga 2. Se o lanche tiver 6 porções, o cliente pagará 4. Assim por diante...");
 
 		promotions.add(muitoQueijo);
 		

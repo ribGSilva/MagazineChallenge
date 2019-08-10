@@ -1,0 +1,12 @@
+<div class="row" class="text-center" style="margin-top: 20px; margin-bottom: 20px;">
+    <h4>Escolha seu Sandwich</h4>
+</div>
+
+<div class="row">
+  <div class="col-3 text-center border" *ngFor="let sandwich of sandwichList">
+    <img src="{{ sandwich.image }}" width="100px" style="margin-top: 30px; margin-bottom: 15px" />
+    <h5> {{ sandwich.name }}</h5>
+    <button class="btn btn-success" style="margin-top: 15px; margin-bottom: 30px"
+      (click)="choose(sandwich)">Escolher</button>
+  </div>
+</div>
