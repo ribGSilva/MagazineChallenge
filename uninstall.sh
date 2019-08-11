@@ -1,9 +1,16 @@
 #!/bin/bash
 
+echo "Revoming Angular client container..."
+
+sudo docker rm -f clinetserver
+
+sudo docker rmi -f webclient:0.1
+
 echo "Revoming JAVA server container..."
 
-sudo docker rmi -f webserver:0.1
+sudo docker rm -f javaserver
 
+sudo docker rmi -f webserver:0.1
 
 echo "Returning to old proxying..."
 
