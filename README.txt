@@ -1,12 +1,12 @@
-This projet was made by Gabriel Ribeiro Silva, gabriel.siilv3409@gmail.com
+This projet was made by Gabriel Ribeiro Silva, gabriel.silva3409@gmail.com
 
-It is a simple project with Spring and Angular, bolth in different Docker Containers.
+It's a simple project with Spring and Angular, bolth in different Docker Containers.
 
-WebService Spring is listenning at port 8080.
-xgnix is redirecting the requests at 80 to 8080 server of the Spring server.
-Angular client is listenning to default 4200. 
+WebService Spring is listenning the port 8080.
+xgnix is redirecting the requests of the port 80 to the port 8080, hitting so, the Spring server.
+Angular client is listenning to default port 4200. 
 
-To access the application, hit http://localhost:4200/.
+To access the application, hit http://localhost:4200/
 
 Pre-requirements:
 
