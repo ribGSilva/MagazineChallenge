@@ -7,6 +7,7 @@ com\gabrielsilva\magazinservice\repository\mapper\IngredientsMapper.class
 com\gabrielsilva\magazinservice\repository\SandwichDAO.class
 com\gabrielsilva\magazinservice\business\PromotionRules.class
 com\gabrielsilva\magazinservice\services\CalculateSandwichPriceService.class
+com\gabrielsilva\magazinservice\utils\PromotionUtils.class
 com\gabrielsilva\magazinservice\repository\PromotionDAO.class
 com\gabrielsilva\magazinservice\repository\entity\Order.class
 com\gabrielsilva\magazinservice\repository\mapper\SandwichMapper.class
@@ -14,6 +15,7 @@ com\gabrielsilva\magazinservice\services\SandwichListService.class
 com\gabrielsilva\magazinservice\utils\IngredientUtils.class
 com\gabrielsilva\magazinservice\repository\IngredientDAO.class
 com\gabrielsilva\magazinservice\services\ReceiveOrderService.class
+com\gabrielsilva\magazinservice\repository\entity\IngredientItem.class
 com\gabrielsilva\magazinservice\repository\mapper\PromotionMapper.class
 com\gabrielsilva\magazinservice\repository\entity\Ingredient.class
 com\gabrielsilva\magazinservice\repository\entity\Sandwich.class

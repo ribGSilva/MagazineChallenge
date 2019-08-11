@@ -4,6 +4,7 @@ E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinser
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\enums\SandwichNames.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\WebConfig.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\repository\SandwichDAO.java
+E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\utils\PromotionUtils.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\MagazinServiceApplication.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\repository\entity\Order.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\enums\PromotionNames.java
@@ -23,3 +24,4 @@ E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinser
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\services\IngredientListService.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\repository\entity\Promotion.java
 E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\repository\entity\Ingredient.java
+E:\Git\magazineChallenge\MagazinServer\src\main\java\com\gabrielsilva\magazinservice\repository\entity\IngredientItem.java
